@@ -1,11 +1,15 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(Preflight)
+project(preflight)
 
 find_package(catkin REQUIRED COMPONENTS
   mavros
   roscpp
   std_msgs
   mavros_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
